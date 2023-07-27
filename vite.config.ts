@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
+  base: "/website-2023/",
   css: {
     preprocessorOptions: {
       scss: {
@@ -13,6 +14,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
+      '@nested': resolve(__dirname, 'src/nested'), // Alias for the nested folder
     },
   },
 });

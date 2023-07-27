@@ -1,8 +1,9 @@
-// import '../styles/style.css'
 import '@/styles/main.scss';
+import '@/nested/nested.ts'
 import ahLogo from '../assets/logo.svg'
 import ahLogoFilled from '../assets/logo-filled.svg'
 import { setupCounter } from './counter.ts'
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -12,7 +13,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <a href="https://www.figma.com/file/UKl9qbbAjYKcky6ujwWUNKBz/Main-Logo?type=design&mode=design&t=byFP2fiJhG1CJqYt-1" target="_blank">
       <img src="${ahLogo}" class="logo vanilla" alt="TypeScript logo" />
     </a>
-    <h1>Andrew Hale</h1>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
